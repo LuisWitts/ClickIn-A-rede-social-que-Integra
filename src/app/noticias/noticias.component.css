@@ -1,0 +1,58 @@
+/* LOGO CLICKIN */
+
+#logo{
+    width: 150px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+/* BARRA DE CORES */
+
+#barracolor{
+    margin-left: 8px;
+}
+
+/* TITULO */
+
+#titulo{
+    text-align: center;
+    margin-top: 3%;
+}
+
+/* IMAGEM CARD */
+
+.card-img-top{
+    height: 250px;
+    width: 100% !important;
+}
+
+/* BOTÃO RETORNAR AO FEED */
+
+#retornarfeed{
+    background-color:#3952AF;
+    color: white;
+}
+
+#botaoretornar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.teste{
+    padding:0%;
+    box-shadow: 1px 2px #b4b4b4;
+    margin-top: 3%;
+}
+
+.teste h5,p{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+a{
+    color: #3952AF;
+    margin-left: 15px;
+}

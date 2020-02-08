@@ -1,0 +1,181 @@
+/* LOGO CLICKIN */
+
+#logo{
+    width: 150px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+/* BARRA DE CORES */
+
+#barracolor{
+    margin-left: 8px;
+    
+}
+
+#cardpesquisar{
+    margin-top:6%;
+    margin-bottom: 10%;
+}
+
+/* CARD PUBLICAR  */
+
+.card{
+    display: flex;
+    justify-content: right;
+    box-shadow: 1px 2px #b4b4b4;
+}
+
+/* FOTO NO CARD DA PUBLICAÇÃO */
+
+#fotopost{
+
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+/* IMAGEM PERFIL */
+
+.imagemPerfil{
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-left: 12%;
+  margin-top: 6%;
+}
+
+/* NUMERO AO LADO DE MENSAGENS-NOTIFICAÇOES */
+
+#badge{
+
+ background-color: #3952AF;
+ color: white;
+
+}
+
+/* CARD OPÇÕES DE SEGUIR */
+
+#opcoescurtir{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    box-shadow: 1px 2px #b4b4b4;
+}
+
+/* LINKS CURTIR-COMPARTILHAR-COMENTAR */
+
+.card-link{
+    color: #3952AF;
+}
+.card-footer{
+    color: #3952AF;
+}
+
+/* CURSOR LINKS */
+
+.nav-link{
+    cursor: pointer;
+    color: #212529;
+}
+
+/* SOMBRA NOS CARDS */
+
+.list-group{
+    box-shadow: 1px 2px  #b4b4b4;
+}
+
+/* SENHA FFRACA/MEDIA/FORTE */
+
+#spanPadrao{
+    color: red;
+}
+
+
+#spanSenhaForte{
+    color: green;
+}
+
+#spanSenhaFraca{
+    color: blue;
+}
+
+/* LINKS E BOTÕES DO PERFIL */
+
+.btn-sm, #bot1 {
+    background: #3952AF;
+    color: white;
+}
+
+
+a{
+    color: #212529;
+}
+
+#linksperfil{
+    color: #3952AF;
+}
+
+li{
+    color: #212529;
+}
+
+/* BOTAO EDITAR */
+
+#botaoeditar{
+    background-color:white;
+    color: #3952AF;
+    cursor: pointer;
+}
+
+/* BOTÃO ALTERAR */
+
+#botaoalterar{
+    background-color:#3952AF;
+    color: white ;
+}
+
+#gedf-drop1{
+    color: #3952AF;
+}
+
+h6{
+    color: #212529;
+}
+
+.card-link{
+    cursor: pointer;
+    
+}
+
+
+@media(max-width: 900px){
+    #barracolor{
+        width: 100%;
+    }
+    .h5{
+        text-align: center;
+    }
+    .imagemPerfil{
+        margin: auto;
+    }
+}
+
+.hidden{
+    display: none;
+  }
+
+  #btnAlterar{
+    background-color:#3952AF;
+    color: white;
+  }
+
+
+
+
+
+

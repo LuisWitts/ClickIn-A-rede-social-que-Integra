@@ -1,0 +1,243 @@
+/* LOGO CLICKIN */
+#myTabContent{
+    height: 300px;
+}
+
+#logo{
+    width: 150px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+/* BARRA DE CORES */
+
+#barracolor{
+    margin-left: 8px;
+}
+
+/* CONTEÚDO SOBRE-INFO-EXPERIENCIAS */
+
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+    
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 100%;
+    border: none;
+    border-radius: 0%;
+    font-size: 15px;
+    
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #3952AF;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #3952AF;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #3952AF;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #3952AF;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #3952AF;
+}
+
+
+/* CARDS  */
+
+.card{
+    display: flex;
+    justify-content: right;
+    margin-top: 6%;
+    box-shadow: 1px 2px  #b4b4b4;   
+}
+
+#cardPerfil{
+    margin-top: 5%;
+    margin-left: 45px;
+    box-shadow: 1px 2px  #b4b4b4;   
+}
+
+/* NUMERO AO LADO DE MENSAGENS-NOTIFICAÇOES */
+
+#badge{
+ background-color: #3952AF;
+ color: white;
+
+}
+
+/* FOTO NO CARD DA POSTAGEM */
+
+#fotopost{
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* CARD DE PESQUISA */
+
+#cardpesquisar{
+    margin-top: 13% ;
+    box-shadow: 1px 2px  #b4b4b4;   
+}
+
+/* CARD OPÇÕES DE SEGUIR */
+
+#opcoescurtir{
+    margin-top: 10%;
+    box-shadow: 1px 2px  #b4b4b4; 
+    color: #212529;  
+}
+
+/* LINKS CURTIR-COMPARTILHAR-COMENTAR */
+
+.card-link{
+    color: #3952AF;
+}
+
+/* DROPDOWN EDITAR */
+
+#gedf-drop1{
+    color: #3952AF;
+}
+
+.dropdown-menu{
+color: #3952AF;
+}
+
+.nav-link{
+    cursor: pointer;
+    color: #3952AF;
+}
+
+
+#capa{
+    margin-top: 2%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 1200px; 
+    box-shadow: 1px 2px  #b4b4b4;   
+}
+#perfil{
+    border-style: solid;
+    border-color: black;
+    border: 2px;
+    height: 200px;
+    width: 200px;
+    margin-top: 13%;
+    margin-left: 5%;
+    box-shadow: 1px 2px  #b4b4b4;   
+}
+
+.list-group{
+    box-shadow: 1px 2px #b4b4b4;
+}
+
+/* LINKS E BOTÕES DO PERFIL */
+
+.btn-sm{
+    background: #3952AF;
+    color: white;
+}
+
+a{
+    color: #3952AF;
+}
+
+#linksperfil{
+    color: #3952AF;
+}
+.profile-edit-btn{
+    background: #3952AF;
+    color: white;
+}
+
+h6{
+    color: #212529;
+}
+
+#opcoesseguir{
+    color: #212529;
+}
+
+#btnsair{
+    
+    color: #3952AF;
+}
+

@@ -1,1 +1,2 @@
-# CLICKIN---A-REDE-SOCIAL-QUE-INTEGRA
+# ProjetoIntegradorClickIn
+Rede social criada no bootcamp da Generation BR

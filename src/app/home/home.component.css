@@ -1,0 +1,226 @@
+/* LOGO CLICKIN */
+
+#logo{
+    left: 50px; /* posiciona a 90px para a esquerda */ 
+    top: 330px; /* posiciona a 70px para baixo */
+    width: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+/* BOTÃO CADASTRAR/ENTRAR */
+
+#cadastro{
+    margin-left: 120%;
+}
+
+
+/* BEM-VINDXS */
+
+h1{
+    color: black;
+    margin-top: 22%;
+    margin-left: 30%;
+    font-size: 48px;
+}
+
+
+/* IMAGEM CADEIRANTE */
+
+#cadeirante{
+
+    margin-top: 3%; 
+    width: 65%;
+    height: 95%;
+
+}
+
+/* IMAGEM QUEM SOMOS */
+
+#deficientesfoto{
+ 
+    height: 70%;
+    width: 80%;
+    margin-top: 13%;
+
+}
+
+.nav-link{
+    color: rgb(138, 138, 138);
+}
+
+/* PARRALAX */
+
+.parallax {
+
+    background-image: url("../../assets/images/quebracabeça.jpeg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.parallaxdois {
+
+    background-image: url("../../assets/images/quebracabeça1.jpeg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+/* CARROUSEL */
+
+#carouselExampleIndicators{
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+
+
+/* BOTÃO CARROUSEL */
+
+.carousel-control-next-icon{
+    background-color: rgb(182, 182, 182);
+
+}
+.carousel-control-prev-icon{
+    background-color:rgb(182, 182, 182);
+}
+
+
+/* TITULO - SOBRE O PROJETO */
+
+h3{
+    text-align: center;
+    margin-top: 7%;
+    
+}
+
+
+/* TITULO - NOSSO TIME */
+
+h4{
+    text-align: center;
+    
+}
+
+/* TEXTO */
+
+p{
+    text-align: justify;
+    margin-top: 1%;
+    margin-left: 6%;
+    margin-right: 6%;
+    line-height: 25px;
+    margin-bottom: 8%;
+}
+
+
+
+/*DROPDOW*/
+
+.dropdown{
+    margin-left: 120%;
+}
+
+#dropdownMenuButton{
+    margin-right: 10px;
+    height: 42px;
+    
+}
+
+/* VIDEO */
+
+.video{
+    height: 320px;
+    width: 530px;
+    text-align: center;
+    margin-top: 23%;
+}
+
+/* TEXTO  */
+
+#texto{
+    margin-top: 18%;
+    margin-block-end: 9%;
+}
+
+.arrowicon{
+    margin-left: 47%;
+}
+
+h2{
+    margin-left: 6%;
+}
+
+.dropdown-item{
+    background-color: rgb(255, 255, 255) ;
+    cursor: pointer;
+}
+
+/* BOTÕES */
+
+#botoes{
+    color: white;
+    background-color: #3952AF;
+}
+
+@media(max-width: 900px){
+    .modal{
+            max-width: 100%;
+            max-height: 1000px;
+        }
+        h1{
+            margin: auto;
+        }
+        #carouselExampleIndicators img{
+            width: 100%;
+        }
+        iframe{
+            width: 300px;
+            margin: auto;
+        }
+        .embed-responsive{
+            width: 300px;
+        }
+        .navbar img{
+            padding: 0%;
+            margin: 0%;
+        }
+        .dropdown{
+            margin-left: 1%;
+            margin-top: 8%;
+        }
+        #botoes{
+            margin:auto; 
+            margin-top: 8%;
+        }
+    }
+
+    #spanPadrao{
+        color: red;
+    }
+    
+    
+    #spanSenhaForte{
+        color: green;
+    }
+    
+    #spanSenhaFraca{
+        color: blue;
+    }    
+
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+        
+    }
+    input[type=number] { 
+       -moz-appearance: textfield;
+       appearance: textfield;
+    
+    }

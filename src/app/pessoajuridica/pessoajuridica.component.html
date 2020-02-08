@@ -1,0 +1,126 @@
+<!-- NAVBAR -->
+<div class="col-md-7">
+        <nav class="navbar navbar-expand-lg navbar-transparent ">
+    
+            <a [routerLink]="'/home'" class="titulo">
+                <strong>
+                    <img src="/assets/images/logonew.png" id="logo">
+                </strong></a>
+            <a class="navbar-brand" href="#"></a>
+    
+        </nav>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <img src="../../assets/images/barracolorP.png" height="3" width="1300" id="barracolor">
+        </div>
+    </div>
+<!-- CARD PERFIL -->
+
+<div class="row">
+    <div class="col-md-3 ">
+        <div class="container-fluid gedf-wrapper mt-4 ">
+            <div class="row align-items-center">
+                <img src="../../assets/images/perfiluser.png" id="imagemPerfil" alt="imagem do perfil da empresa"> </div>
+            <div class="h5 mt-4">{{ usuario.nome }}</div>
+            <div class="h5 mt-4">{{ usuario.nomeFantasia }}</div>
+
+            <ul class="list-group mt-4">
+                <li class="list-group-item d-flex justify-content-between align-items-center h6 text-muted">
+                    <a class="nav-link" [routerLink]="'/feed'" id="linkcard">Feed</a>
+                    <span class="badge badge badge-pill"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center h6 text-muted">
+                    <a class="nav-link" [routerLink]="'/noticias'" id="linkcard">Notícias</a>
+                    <span class="badge badge badge-pill" id="badge">6</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center h6 text-muted">
+                    <a class="nav-link" (click)="logout();" id="linkcard">Sair</a>
+                    <span class="badge badge badge-pill"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- TABELA DE EDIÇÃO -->
+    <div class="col-md-9">
+        <div class="row">
+                <div class="col-md-12 d-flex justify-content-center">
+                        <div class="col-md-12 mb-5">
+      
+            <div class="jumbotron mt-3 m-0" >
+                <h5 class="display-4" id="titulo">Perfil Empresa</h5>
+                <form>
+                    <div class="form-row mt-5">
+                        
+                        <div class="form-group col-md-6">
+                            <label for="inserirnomefantasia">Nome Fantasia</label>
+                            <input type="text" class="form-control" placeholder="Editar seu nome fantasia" [(ngModel)]="nomeFantasia" [ngModelOptions]="{standalone: true}" id="nomeFantasia" value= {{usuario.nomeFantasia}}>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inserirRazaoSocial">Razão Social</label>
+                            <input type="text" class="form-control" placeholder="Editar sua razão social" id="razaoSocial" [(ngModel)]="razaoSocial" [ngModelOptions]="{standalone: true}" value= {{usuario.razaoSocial}}>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inserirendereco">Endereço</label>
+                            <input type="text" class="form-control" id="endereco"
+                                placeholder="Editar seu endereço" [(ngModel)]="endereco" [ngModelOptions]="{standalone: true}" value= {{infousuario.endereco}}>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="InserirSetor">Setor</label>
+                                <input type="text" class="form-control" id="setor"
+                                 placeholder="Editar setor" [(ngModel)]="setor" [ngModelOptions]="{standalone: true}" value= {{infousuario.setor}}>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inserirTelefone">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" placeholder="Insira seu stelefone para contato" [(ngModel)]="telefone" [ngModelOptions]="{standalone: true}" value= {{usuario.telefone}}>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inserircnpj">CNPJ</label>
+                            <input type="text" class="form-control" placeholder="Edite o número do seu CNPJ" [(ngModel)]="cnpj" [ngModelOptions]="{standalone: true}" id="cnpj" value= {{usuario.cnpj}}>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inserirInfoEmpresa">Informações sobre a empresa</label>
+                                <textarea class="form-control" rows="3" [(ngModel)]="infoEmpresa" [ngModelOptions]="{standalone: true}" id="infoEmpresa"
+                                    placeholder="Editar informações sobre sua empresa" value= {{infousuario.infoEmpresa}}></textarea>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inserirInfoProfissional">Vagas</label>
+                                <textarea class="form-control" id="infoVagas" rows="3" [(ngModel)]="infoVagas" [ngModelOptions]="{standalone: true}"
+                                    placeholder="Editar informações sobre suas vagas disponíveis" value= {{infousuario.infoVagas}}></textarea>
+                            </div>
+    
+                        </div>
+
+                        <button class="btn btn-lg  btn-block text-uppercase mt-3"
+                        (click)="enviar();" id="botao">Alterar</button>
+    
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+<!-- FOOTER -->
+  
+<hr>
+<div class="row">
+  <div class="col-md-12 d-flex justify-content-center">
+      <strong>ClickIn&reg;</strong>2020
+  </div>
+</div>
+<div class="row" id="footer">
+  <div class="col-md-12 d-flex justify-content-center mb-3">
+      <a class="nav-link mr-1 m-0 p-0" [routerLink]="'/contato'"id="linkcard">Contato</a><strong>|</strong>
+      <a class="nav-link ml-1 m-0 p-0" [routerLink]="'/faq'"id="linkcard">Ajuda</a>
+  </div>
+</div>

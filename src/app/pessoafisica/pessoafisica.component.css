@@ -1,0 +1,66 @@
+/* LOGO CLICKIN */
+
+#logo{
+    width: 150px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+/* BARRA DE CORES */
+
+#barracolor{
+    margin-left: 8px;
+}
+
+/* TABELA DE EDIÇÃO */
+
+    #tabela{
+        justify-content: right;
+        width: 100%;   
+    }
+    .list-group{
+        box-shadow: 4px 3px #d1d1d1;
+    }
+    .jumbotron{
+    background-color: #d9e0fc;
+    box-shadow: 4px 3px #d1d1d1;
+    width: 100%;
+    }
+
+
+/* IMAGEM PERFIL */
+
+.imagemPerfil{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-left: 25%;
+    margin-top: 6%;
+  }
+  
+
+    h5, #nomeUsuario{
+        text-align: center;
+    }
+
+    .nav-link{
+    cursor: pointer;
+    color: #3952AF;
+    }
+    
+    
+    /* NUMERO AO LADO DE MENSAGENS-NOTIFICAÇOES */
+    
+    #badge{
+     background-color: #3952AF;
+     color: white;
+    }
+    
+    #botao{
+        background-color: #3952AF;
+        color: white;
+    }
+
+    #btnsair{
+        color: #3952AF;
+    }

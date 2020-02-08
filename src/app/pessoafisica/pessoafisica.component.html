@@ -1,0 +1,153 @@
+<!-- NAVBAR -->
+
+<div class="col-md-7">
+    <nav class="navbar navbar-expand-lg navbar-transparent ">
+
+        <a [routerLink]="'/home'" class="titulo">
+            <strong>
+                <img src="/assets/images/logonew.png" id="logo">
+            </strong></a>
+        <a class="navbar-brand" href="#"></a>
+
+    </nav>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <img src="../../assets/images/barracolorP.png" height="3" width="1300" id="barracolor">
+    </div>
+</div>
+
+<!-- CARD PERFIL -->
+
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="container-fluid gedf-wrapper mt-4">
+            <div class="row align-items-center">
+                <img src="../../assets/images/perfiluser.png" class="imagemPerfil" alt="imagem do perfil da empresa">
+            </div>
+            <div class="h5 mt-4 text-uppercase">{{ usuario.nome }}</div>
+            <div class="h5 mt-4 text-uppercase">{{ usuario.nomeFantasia }}</div>
+
+            <ul class="list-group mt-4">
+                <li class="list-group-item d-flex align-items-center h6 text-muted">
+                    <a class="nav-link" [routerLink]="'/feed'">Feed</a>
+                    <span class="badge badge badge-pill"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center h6 text-muted">
+                    <a class="nav-link" [routerLink]="'/noticias'"> Noticias </a>
+                    <span class="badge badge badge-pill" id="badge">6</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center h6 text-muted">
+                    <a class="nav-link" (click)="logout();" id="btnsair"> Sair </a>
+                    <span class="badge badge badge-pill"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- TABELA DE EDIÇÃO -->
+
+
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div class="col-md-12 mb-5">
+                    <div class="jumbotron mt-3 m-0">
+                        <h5 class="display-4" id="titulo">Perfil Candidato</h5>
+                        <form>
+                            <div class="form-row mt-5">
+                                <div class="form-group col-md-6">
+                                    <label for="inserirnome">Nome Completo</label>
+                                    <input type="text" class="form-control" id="nomeCompleto"
+                                        placeholder="Como você gostaria do seu nome no perfil"
+                                        [(ngModel)]="nomeCompleto" [ngModelOptions]="{standalone: true}"
+                                        value={{usuario.nome}}>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inserirCPF">CPF</label>
+                                    <input type="text" class="form-control" id="cpf" placeholder="Insira seu CPF"
+                                        [(ngModel)]="cpf" [ngModelOptions]="{standalone: true}"
+                                        value={{infousuario.cpf}}>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inserirendereco">Endereço</label>
+                                    <input type="text" class="form-control" id="endereco"
+                                        placeholder="Insira seu endereço para buscar as vagas por perto"
+                                        [(ngModel)]="endereco" [ngModelOptions]="{standalone: true}"
+                                        value={{infousuario.endereco}}>
+                                </div>
+
+                                <div class="form-group col-md-6">
+
+                                    <label for="inserirtelefone">Telefone</label>
+                                    <input type="text" class="form-control" id="telefone" value={{usuario.telefone}}
+                                        placeholder="Insira seu telefone" [(ngModel)]="telefone"
+                                        [ngModelOptions]="{standalone: true}">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inserirSetor">Setor</label>
+                                    <input type="text" class="form-control" id="setor"
+                                        placeholder="Insira seu setor de atuação" [(ngModel)]="setor"
+                                        [ngModelOptions]="{standalone: true}" value={{infousuario.setor}}>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inserirsobrenome">Cargo</label>
+                                    <input type="text" class="form-control" id="cargo"
+                                        placeholder="Insira seu cargo atual. EX: autonomo, farmacêutico etc.."
+                                        [(ngModel)]="cargo" [ngModelOptions]="{standalone: true}"
+                                        value={{infousuario.cargo}}>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inserirInfoAcademica">Formação acadêmica</label>
+                                    <textarea class="form-control" id="formacaoAcademica" rows="3"
+                                        [(ngModel)]="formacaoAcademica" [ngModelOptions]="{standalone: true}"
+                                        value={{infousuario.infoAcademica}}></textarea>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inserirInfoProfissional">Formação profissional</label>
+                                    <textarea class="form-control" id="formacaoProfissional" rows="3"
+                                        [(ngModel)]="formacaoProfissional" [ngModelOptions]="{standalone: true}"
+                                        value={{infousuario.infoProfissional}}></textarea>
+                                </div>
+
+                            </div>
+
+
+
+                            <button class="btn btn-lg btn-block text-uppercase mt-3" (click)="enviar();"
+                                id="botao">Alterar</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<hr>
+<div class="row">
+    <div class="col-md-12 d-flex justify-content-center">
+        <strong>ClickIn&reg;</strong>2020
+    </div>
+</div>
+<div class="row" id="footer">
+    <div class="col-md-12 d-flex justify-content-center mb-3">
+        <a class="nav-link mr-1 m-0 p-0" [routerLink]="'/contato'" id="linkcard">Contato</a><strong>|</strong>
+        <a class="nav-link ml-1 m-0 p-0" [routerLink]="'/faq'" id="linkcard">Ajuda</a>
+    </div>
+</div>
